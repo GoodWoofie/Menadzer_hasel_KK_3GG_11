@@ -20,7 +20,8 @@ function load() {
     let buffer = "";
     buffer += "<ul>";
     for (let i = 0; i < dataArray.length; i++) {
-        buffer += "<li>login: " + dataArray[i][0] +
+        buffer += "<li>login: " +
+            dataArray[i][0] +
             " Hasło: " +
             dataArray[i][1] +
             " Strona: " +
@@ -38,6 +39,6 @@ function del(i) {
     window.localStorage.setItem('data', JSON.stringify(dataArray));
     load();
 }
-function del(i) {
+function edit(i) {
 
 }
